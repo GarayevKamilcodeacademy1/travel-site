@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/holidays.css">
+</head>
+
+<body>
+
+    <div class="settings">
+        <div class="blue p-3">
+            <h3>Customize Travelo</h3>
+            <i id="icon" class="fas fa-cogs"></i>
+        </div>
+        <div class="gray p-4">
+            <p>HEADER STYLE</p>
+            <select name="" id="">
+                <option value="">Style 1</option>
+                <option value="">Style 2</option>
+                <option value="">Style 3</option>
+                <option value="">Style 4</option>
+                <option value="">Style 5</option>
+            </select>
+            <p>FOOTER STYLE</p>
+            <select name="" id="">
+                <option value="">Style 1</option>
+                <option value="">Style 2</option>
+                <option value="">Style 3</option>
+                <option value="">Style 4</option>
+                <option value="">Style 5</option>
+            </select>
+
+            <p class="mb-3">DESIGN SKINS</p>
+            <ul>
+                <li style=" border-color: rgb(26, 170, 228);">
+                    <a style="background: rgb(26, 170, 228);" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #9f60b5">
+                    <a style="background:#9f60b5 ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: orange">
+                    <a style="background: orange ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #f5a77d">
+                    <a style="background:#f5a77d ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #0ab596">
+                    <a style="background:#0ab596 ; " href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li style="border-color: #6dace6">
+                    <a style="background:#6dace6 ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #ff3e3e">
+                    <a style="background:#ff3e3e ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #194eb0">
+                    <a style="background:#194eb0 ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #ffd200">
+                    <a style="background:#ffd200 ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+                <li style="border-color: #e44049">
+                    <a style="background:#e44049 ;" href="">
+                        <i class="fas fa-check"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <button>APPLY SETTINGS</button>
+        </div>
+    </div>
+
+
+    <header id="header" class="sticky-top ">
+        <div class="top-nav">
+            <div class="container d-flex">
+                <ul id="left" class="pt-2 d-flex">
+                    <li class="px-2">
+                        <a href="">MY ACCOUNT</a>
+                    </li>
+                    <li id="english" class="px-2">
+                        <a href="">ENGLISH ▼</a>
+                        <ul id="lang">
+                            <li>Dansk</li>
+                            <li>Deutsch</li>
+                            <li class="active">English</li>
+                            <li>Español</li>
+                            <li>Français</li>
+                            <li>Italiano</li>
+                            <li>Magyar</li>
+                            <li>Nederlands</li>
+                            <li>Norsk</li>
+                            <li>Polski</li>
+                            <li>Português</li>
+                            <li>Suomi</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="right" class="d-flex">
+                    <li class="first px-5 py-2">
+                        <a href=""> PURCHASE</a>
+                    </li>
+                    <li class="py-2 px-2">
+                        <a href="">LOGIN</a>
+                    </li>
+                    <li class="py-2 px-2">
+                        <a href="">SIGN UP</a>
+                    </li>
+                    <li class="py-2 px-2 usd">
+                        <a href="">USD ▼</a>
+                        <ul id="money">
+                            <li>AUD</li>
+                            <li>BRL</li>
+                            <li class="active">USD</li>
+                            <li>CAD</li>
+                            <li>CHV</li>
+                            <li>CFD</li>
+                            <li>SZK</li>
+                            <li>AZN</li>
+                            <li>EUR</li>
+                            <li>ASD</li>
+                            <li>QWS</li>
+                            <li>ZXC</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="travelo border">
+            <div class="container">
+                <div class="row py-2">
+                    <img id="logo" class="my-2" src="img/logo.png" alt="">
+
+                    <div class="menu-bar py-2 px-4 ">
+                        <span>
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </div>
+                    <div class="col-8">
+                        <nav id="mainmenu">
+                            <ul id="menu" class=" py-2 d-flex">
+                                <li style="color:#01b7f2">HOME
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>HOTELS
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>FLIGHTS
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>CARS
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>CRUISES
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>TOUR
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>PAGES
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>SHORTCODES
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                                <li>BONUS
+                                    <ul id="alt-ul">
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                        <li id="innerli">Home Layout1</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul id="altmenu" class="d-none">
+            <li>HOME
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>HOTELS
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>FLIGHTS
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>CARS
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>CRUISES
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>TOUR
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>PAGES
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>SHORTCODES
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li>BONUS
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+            <li> PURCHASE
+                <span id="plus">
+                    <i class="fas fa-plus-circle"></i>
+                </span>
+                <ul id="alt-ul" class="d-none">
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                    <li>Home Layout 1</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </header>
+
+
+    <section id="black-row">
+        <div style="background-color:#2D3E52" class="blackrow">
+            <div class="container d-flex justify-content-between align-items-center">
+                <h3 style="color:white; font-size:1.3rem; margin:15px 0;">Holidays</h3>
+                <ul id="ul">
+                    <li>HOME / </li>
+                    <li>PAGES /</li>
+                    <li style="color:orange">HOLIDAYS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <h2>Best Holiday Suggestions for you!</h3>
+                    <h3>2,000 destinations in 120 countries.</h3>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="pb-5" id="undercontent">
+        <div class="container">
+            <div class="row">
+                <div class="holiday-tabs">
+                    <ul>
+                        <li class="active">
+                            <i class="fas fa-user-friends"></i> FAMILY
+                        </li>
+                        <li class="honeymoon">
+                            <i class="fas fa-heartbeat"></i> HONEYMOON
+                        </li>
+                        <li>
+                            <i class="far fa-calendar-alt"></i> WEEKENDS
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i> FRIENDS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7 first col-12 ">
+                   <div class="headings pt-4">
+                    <h4>Honeymoon Suggestions</h4>
+                    <p>Duis condimentum ante hendrerit, sagittis sapien vitae, elementum libero. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Donec massa urna, interdum sed nunc eu,
+                        pretium fermentum velit. Donec sodales.</p>
+                   </div>
+                </div>
+                <div class="col-lg-5 col-12 ">
+                   <div class="imgbox pt-4">
+                    <img src="img/velo.png" alt="">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <div class="container">
+            <div class="row mt-4">
+                <h4>Dubai, United Arab Emirates</h4>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/newslider4.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Atlantis - The Palm</a>
+                                <br>
+                                <small>PARIS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$490</h4>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/newslider2.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Crwon Casino</a>
+                                <br>
+                                <small>AUSTRALIA</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$290</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations03.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Hilton Hotel</a>
+                                <br>
+                                <small>LONDON</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$170</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/newslider1.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">MGM Grand</a>
+                                <br>
+                                <small>LAS VEGAS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$130</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row  mt-4">
+                <h4>Kuala Lumpur, Malaysia</h4>
+            </div>
+            <div class="row  mt-4">
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations01.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Atlantis - The Palm</a>
+                                <br>
+                                <small>PARIS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$490</h4>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/hotel2.png" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Crwon Casino</a>
+                                <br>
+                                <small>AUSTRALIA</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$290</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/news01.png" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Hilton Hotel</a>
+                                <br>
+                                <small>LONDON</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$170</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/hotel4.png" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">MGM Grand</a>
+                                <br>
+                                <small>LAS VEGAS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$130</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row  mt-4">
+                <h4>Cape Town, South Africa</h4>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations01.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Atlantis - The Palm</a>
+                                <br>
+                                <small>PARIS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$490</h4>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations02.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Crwon Casino</a>
+                                <br>
+                                <small>AUSTRALIA</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$290</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations03.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">Hilton Hotel</a>
+                                <br>
+                                <small>LONDON</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$170</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  border">
+                    <div class="mainbox ml-1">
+                        <div class="box">
+                            <div class="hover">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="img/destinations04.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <span class="pt-2 ml-4">
+                                <a href="">MGM Grand</a>
+                                <br>
+                                <small>LAS VEGAS</small>
+                            </span>
+
+                            <span class="ml-5 pl-4 money">
+                                <small>FROM</small>
+                                <br>
+                                <h4>$130</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row  mt-5">
+                <h4>Cape Town, South Africa</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12 ">
+                    <ul id="popular">
+                        <li><p>▸Beijing, China</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Melbourne, Australia</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸New York, United States</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸New Delhi, India</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Budapest, Hungary</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 ">
+                    <ul id="popular">
+                        <li><p>▸London, United Kingdom</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Durban, South Africa</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Phuket, Thailand</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Shanghai, China</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Toronto, Canada</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 ">
+                    <ul id="popular">
+                        <li><p>▸Cebu, Philippines</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Jaipur, India</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Cape Town, South Africa</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Goa, India</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Abu Dhabi, United Arab Emirates</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 ">
+                    <ul id="popular">
+                        <li><p>▸Victor Harbor, South Australia</p>
+                            <small>3390 PLACES</small></li>
+                        <li><p>▸Ontario, Canada</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Frankfurt, Germany</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Penang, Malaysia</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                        <li><p>▸Ontario, Canada</p>
+                            <small>3390 PLACES</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container py-4">
+            <div class="row py-5">
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="box ">
+                        <h4>Discover</h4>
+                        <div class="ul-box  d-flex justify-content-between">
+                            <ul class="ml-1">
+                                <li>▶ Safety</li>
+                                <li>▶ Travelo Picks</li>
+                                <li>▶ Mobile</li>
+                                <li>▶ Why Host</li>
+                                <li>▶ Social Connect</li>
+                                <li>▶ Site Map</li>
+                            </ul>
+                            <ul>
+                                <li>▶ About</li>
+                                <li>▶ Latest Jobs</li>
+                                <li>▶ Press Releases</li>
+                                <li>▶ Blog Posts</li>
+                                <li>▶ Help Topics</li>
+                                <li>▶ Policies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="box">
+                        <h4>Travel News</h4>
+                        <ul id="travel">
+                            <li>
+                                <div class="travel">
+                                    <div class="img"><img src="img/news01.png" alt=""></div>
+                                    <div class="details">
+                                        <a href="">Amazing Places</a>
+                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <span>25 Sep, 2013</span>
+                            <li>
+                                <div class="travel">
+                                    <div class="img"><img src="img/news02.png" alt=""></div>
+                                    <div class="details">
+                                        <a href="">Travel Insurance</a>
+                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <span>25 Sep, 2013</span>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="box">
+                        <h4>Mailing List</h4>
+                        <p>Sign up for our mailing list to get latest updates and offers.</p>
+
+                        <div class="check mb-3">
+                            <input placeholder="your email" type="text">
+                            <button><i class="fas fa-check"></i></button>
+                        </div>
+
+                        <p>We respect your privacy</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+                    <div class="box">
+                        <h4>About Travelo</h4>
+                        <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massaidp nequetiam
+                            lore
+                            elerisque.</p>
+                        <h4><i class="fas fa-phone"></i> 1-800-123-HELLO </h4>
+
+                        <a href="">help@travelo.com</a>
+
+                        <div class="iconbox p-2">
+                            <ul id="icons">
+                                <li><i class="fab fa-twitter-square"></i></li>
+                                <li><i class="fab fa-facebook-square"></i></li>
+                                <li><i class="fab fa-instagram"></i></li>
+                                <li><i class="fab fa-google-plus-square"></i></li>
+                                <li><i class="fab fa-vimeo-v"></i></li>
+                                <li><i class="fab fa-flickr"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="end">
+        <div class="container">
+            <div class="row py-3 justify-content-between align-items-center">
+                <img src="img/logo.png" alt="">
+                <p>©  Travelo</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.settings.active {
+  left: 0%; }
+
+.settings {
+  transition: 1s ease;
+  position: absolute;
+  top: 100px;
+  left: -20%;
+  z-index: 99;
+  position: fixed; }
+  .settings .blue {
+    border-bottom-right-radius: 25px;
+    color: white;
+    width: 370px;
+    background: #01b7f2;
+    display: flex;
+    justify-content: space-between; }
+    .settings .blue h3 {
+      font-size: 1.3rem; }
+    .settings .blue i {
+      color: rgba(255, 255, 255, 0.795);
+      cursor: pointer;
+      font-size: 1.7rem; }
+      .settings .blue i:hover {
+        color: white; }
+  .settings .gray {
+    width: 300px;
+    background: #2d3e52; }
+    .settings .gray button {
+      background: #98ce44;
+      border: none;
+      color: white;
+      padding: 8px 20px;
+      width: 100%;
+      font-size: 0.9rem;
+      font-weight: bold; }
+    .settings .gray ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; }
+      .settings .gray ul li {
+        padding-top: 7px;
+        text-align: center;
+        border-radius: 100%;
+        border: 1px solid;
+        width: 42px;
+        height: 41px; }
+        .settings .gray ul li a {
+          width: 32px;
+          border-radius: 100%;
+          padding: 6px 8px; }
+          .settings .gray ul li a i {
+            color: white; }
+    .settings .gray p {
+      font-size: 0.6rem;
+      color: #7c9abd;
+      margin: 0; }
+    .settings .gray select {
+      margin: 10px 0;
+      width: 100%;
+      padding: 5px; }
+
+@media (min-width: 991px) {
+  #altmenu {
+    display: none; } }
+@media (max-width: 1508px) {
+  .settings {
+    display: none; } }
+@media (max-width: 1200px) {
+  .settings {
+    display: none; }
+
+  .travelo .menu-bar {
+    display: block !important; }
+
+  #mainmenu {
+    display: none !important; }
+
+  .top-nav {
+    display: none; } }
+header {
+  background: white; }
+  header #altmenu {
+    padding: 0 10px;
+    font-family: "Lato", sans-serif;
+    list-style: none;
+    background: #01b7f2; }
+    header #altmenu li {
+      transition: all 0.3s ease;
+      font-weight: 700;
+      position: relative;
+      padding: 10px;
+      border-bottom: 1px solid #0489b6;
+      color: #caf2ff;
+      cursor: pointer; }
+      header #altmenu li #alt-ul {
+        padding: 0 20px; }
+        header #altmenu li #alt-ul li {
+          color: #caf2ff;
+          padding: 5px 0; }
+          header #altmenu li #alt-ul li:hover {
+            color: white; }
+      header #altmenu li:hover {
+        color: white; }
+      header #altmenu li #plus {
+        position: absolute;
+        right: 0; }
+  header .top-nav {
+    width: 100%;
+    height: 30px;
+    background: #01b7f2; }
+    header .top-nav .container {
+      justify-content: space-between; }
+      header .top-nav .container ul#left {
+        height: 30px;
+        padding-left: 0;
+        list-style-type: none !important; }
+        header .top-nav .container ul#left #english:hover #lang {
+          visibility: visible;
+          opacity: 1; }
+        header .top-nav .container ul#left #english #lang {
+          position: relative;
+          list-style-type: none;
+          z-index: 999;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+          padding: 2px;
+          margin-top: 4px;
+          border: 1.5px solid #01b7f2;
+          background: #ffff; }
+          header .top-nav .container ul#left #english #lang li.active {
+            font-weight: 500;
+            color: #01b7f2;
+            background: #f5f5f5; }
+          header .top-nav .container ul#left #english #lang li {
+            border-bottom: 1px solid #f5f5f5;
+            cursor: pointer;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 40px; }
+            header .top-nav .container ul#left #english #lang li:hover {
+              font-weight: 500;
+              color: #01b7f2;
+              background: #f5f5f5; }
+        header .top-nav .container ul#left li {
+          font-size: 0.7rem; }
+          header .top-nav .container ul#left li a {
+            color: white; }
+      header .top-nav .container ul#right {
+        list-style-type: none !important; }
+        header .top-nav .container ul#right li.usd {
+          height: 30px; }
+          header .top-nav .container ul#right li.usd:hover ul#money {
+            visibility: visible;
+            height: auto;
+            opacity: 1; }
+          header .top-nav .container ul#right li.usd ul#money {
+            position: relative;
+            list-style-type: none;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            transition: all 0.3s ease;
+            padding: 2px;
+            margin-top: 4px;
+            border: 1.5px solid #01b7f2;
+            background: #ffff; }
+            header .top-nav .container ul#right li.usd ul#money li.active {
+              font-weight: 500;
+              color: #01b7f2;
+              background: #f5f5f5; }
+            header .top-nav .container ul#right li.usd ul#money li {
+              border-bottom: 1px solid #f5f5f5;
+              cursor: pointer;
+              padding: 10px;
+              padding-left: 20px;
+              padding-right: 40px; }
+              header .top-nav .container ul#right li.usd ul#money li:hover {
+                font-weight: 500;
+                color: #01b7f2;
+                background: #f5f5f5; }
+        header .top-nav .container ul#right li.first {
+          transition: 0.3s ease;
+          font-weight: bold;
+          background: #fdb714;
+          height: 30px; }
+          header .top-nav .container ul#right li.first:hover {
+            background: #da9712; }
+        header .top-nav .container ul#right li {
+          font-size: 0.7rem; }
+          header .top-nav .container ul#right li a {
+            color: white; }
+  header .travelo {
+    position: relative;
+    height: 70px; }
+    header .travelo .menu-bar {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      background: #01b7f2; }
+      header .travelo .menu-bar span {
+        color: white;
+        font-size: 2rem; }
+    header .travelo #mainmenu {
+      height: 70px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center; }
+    header .travelo .row {
+      display: flex;
+      justify-content: space-between; }
+      header .travelo .row #logo {
+        width: 156px;
+        height: 30px; }
+      header .travelo .row #menu {
+        list-style: none; }
+        header .travelo .row #menu li {
+          height: 30px;
+          padding-right: 30px;
+          transition: all 0.5s ease;
+          color: gray;
+          font-weight: 700;
+          font-size: 0.78rem;
+          font-family: 'Lato', sans-serif;
+          cursor: pointer; }
+          header .travelo .row #menu li:hover {
+            color: #01b7f2; }
+            header .travelo .row #menu li:hover #alt-ul {
+              opacity: 1;
+              visibility: visible; }
+          header .travelo .row #menu li #alt-ul {
+            padding: 0;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 999;
+            background: #01b7f2;
+            margin-top: 20px;
+            list-style: none; }
+            header .travelo .row #menu li #alt-ul #innerli {
+              color: white;
+              height: auto;
+              padding: 10px 20px;
+              border-bottom: 1px solid #0b80a0; }
+              header .travelo .row #menu li #alt-ul #innerli:hover {
+                color: white;
+                background: #067492; }
+
+#black-row .blackrow #ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  color: white; }
+  #black-row .blackrow #ul li {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.7rem;
+    font-weight: bold; }
+
+#content {
+  height: 350px;
+  background-image: url("../img/holiday.jpg"); }
+  #content h2 {
+    margin-top: 80px;
+    display: block;
+    font-size: 3rem;
+    color: white; }
+  #content h3 {
+    font-size: 2rem;
+    font-style: italic;
+    color: #ffa600; }
+
+@media (max-width: 469px) {
+  #content h2 {
+    font-size: 2.7rem; }
+  #content h3 {
+    font-size: 1.7rem; } }
+@media (max-width: 769px) {
+  #black-row #ul {
+    display: none !important; }
+
+  #undercontent .holiday-tabs ul {
+    display: block !important; }
+    #undercontent .holiday-tabs ul li {
+      display: block !important; }
+  #undercontent .first {
+    margin-top: 100px; } }
+#undercontent {
+  position: relative; }
+  #undercontent .holiday-tabs {
+    position: absolute;
+    top: -38px; }
+    #undercontent .holiday-tabs ul {
+      list-style: none;
+      display: flex; }
+      #undercontent .holiday-tabs ul li.active {
+        color: #01b7f2;
+        background: white; }
+        #undercontent .holiday-tabs ul li.active i {
+          color: orange; }
+      #undercontent .holiday-tabs ul li {
+        transition: all 0.5s ease;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.63);
+        padding: 10px 15px;
+        margin-right: 15px; }
+        #undercontent .holiday-tabs ul li:hover {
+          color: #01b7f2;
+          background: white; }
+          #undercontent .holiday-tabs ul li:hover i {
+            color: orange; }
+        #undercontent .holiday-tabs ul li i {
+          margin-right: 5px; }
+  #undercontent .col-12 .headings h4 {
+    color: #01b7f2;
+    font-size: 1.5rem; }
+  #undercontent .col-12 .headings p {
+    font-size: 1rem;
+    color: gray; }
+  #undercontent .col-12 .imgbox {
+    display: flex;
+    justify-content: center; }
+
+#destinations {
+  padding: 100px 0;
+  background-color: #dddddd; }
+  #destinations .row {
+    overflow: hidden; }
+    #destinations .row #popular {
+      list-style: none; }
+      #destinations .row #popular li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        #destinations .row #popular li:hover p {
+          color: #01b7f2; }
+        #destinations .row #popular li p {
+          margin: 0; }
+        #destinations .row #popular li small {
+          font-size: 0.6rem;
+          margin-left: 15px; }
+    #destinations .row .arrows .left {
+      cursor: pointer;
+      height: 30px;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      background: #01b7f2;
+      color: white;
+      font-weight: bold;
+      font-size: 2rem; }
+    #destinations .row .arrows .right {
+      cursor: pointer;
+      height: 30px;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      padding: 0 10px;
+      background: #01b7f2;
+      color: white;
+      font-weight: bold;
+      font-size: 2rem; }
+    #destinations .row .window {
+      transition: 0.5s ease;
+      position: relative;
+      display: flex;
+      width: 3000px;
+      left: 0; }
+  #destinations .col-12 {
+    padding: 0;
+    position: relative;
+    overflow: hidden; }
+    #destinations .col-12 .mainbox {
+      background: white; }
+    #destinations .col-12 .money {
+      color: green; }
+    #destinations .col-12 .box {
+      height: 169px;
+      overflow: hidden; }
+      #destinations .col-12 .box:hover .hover {
+        opacity: 0.5;
+        transform: scale(1);
+        transform: rotateY(180deg); }
+      #destinations .col-12 .box:hover img {
+        transform: scale(1.1); }
+    #destinations .col-12 .hover {
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.8s ease;
+      z-index: 2;
+      transform: scale(0.5);
+      opacity: 0;
+      position: absolute;
+      background: #01b7f2;
+      width: 100%;
+      height: 169px; }
+    #destinations .col-12 img {
+      height: 100%;
+      width: 100%;
+      transform: scale(1);
+      cursor: pointer;
+      transition: 0.3s ease; }
+
+#footer .col-12 {
+  padding: 0; }
+  #footer .col-12 .box {
+    padding: 10px; }
+    #footer .col-12 .box .iconbox {
+      box-sizing: border-box; }
+    #footer .col-12 .box #icons {
+      padding: 10px 0;
+      list-style: none;
+      display: flex; }
+      #footer .col-12 .box #icons li {
+        color: white;
+        transition: 0.3s ease;
+        cursor: pointer;
+        background: #cfcece;
+        padding: 5px 10px;
+        margin-right: 7px; }
+        #footer .col-12 .box #icons li:hover {
+          color: white;
+          background: #01b7f2; }
+    #footer .col-12 .box .check {
+      width: 100%; }
+      #footer .col-12 .box .check input {
+        padding: 5px; }
+      #footer .col-12 .box .check button {
+        color: white;
+        padding: 7px 10px;
+        border: none;
+        background: green; }
+        #footer .col-12 .box .check button:hover {
+          background: #05ce05; }
+    #footer .col-12 .box p {
+      font-size: 0.8rem;
+      color: gray; }
+    #footer .col-12 .box .travel {
+      display: flex; }
+      #footer .col-12 .box .travel .details {
+        font-size: 0.9rem;
+        margin-left: 10px; }
+    #footer .col-12 .box ul {
+      padding: 0;
+      list-style: none; }
+      #footer .col-12 .box ul span {
+        padding-bottom: 15px;
+        margin: 0 35% 15px;
+        font-size: 0.7rem; }
+    #footer .col-12 .box .ul-box ul {
+      list-style: none;
+      padding: 0; }
+      #footer .col-12 .box .ul-box ul li {
+        color: dimgray;
+        word-spacing: 3px;
+        margin: 8px 0;
+        font-size: 0.85rem;
+        cursor: pointer; }
+        #footer .col-12 .box .ul-box ul li:hover {
+          color: #01b7f2; }
+    #footer .col-12 .box h4 {
+      font-size: 1.3rem;
+      margin: 15px 0;
+      display: block !important; }
+
+#end {
+  background: #dddddd; }
+  #end p {
+    margin: 0;
+    font-size: 0.9rem; }
+
+/*# sourceMappingURL=holidays.css.map */

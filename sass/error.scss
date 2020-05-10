@@ -1,0 +1,177 @@
+$maincolor:#01b7f2;
+$mainfont:'Lato', sans-serif;
+$bgcolor:rgb(221, 221, 221);
+
+body{
+    background: #1E2937;
+}
+#error{
+    #altmenu{
+        li{
+            #alt-ul{
+                padding: 0 20px;
+                li{
+                    &:hover{
+                        color: white;
+                    }
+                    color: #caf2ff;
+                    padding: 5px 0;
+                }
+            }
+            &:hover{
+                color: white;
+            }
+            #plus{
+                position: absolute;
+                right: 0;
+            }
+            transition: all 0.3s ease;
+            font-weight: 700;
+            position: relative;
+            padding: 10px;
+            border-bottom: 1px solid #0489b6;
+            color: #caf2ff;
+            cursor: pointer;
+        }
+        width: 100%;
+        padding: 0 10px;
+        font-family: $mainfont;
+        list-style: none;
+        background: $maincolor;
+    }
+    img{
+        height: 40px;
+        width: 150px;
+    }
+    height: 100%;
+    .bar{
+        display: none;
+        cursor: pointer;
+        color: white;
+        background: $maincolor;
+        font-size: 2rem;
+    }
+    .h3{
+        text-align: center;
+        width: 660px;
+        h3{
+            margin: 0;
+            color: orange;
+            font-style: italic;
+            font-size: 3.2rem;
+            font-weight: 300;
+        }
+        
+    }
+    h1{
+        color: #01b7f2;
+        margin: 0;
+        font-weight: 300;
+        font-size: 19rem;
+    }
+}
+
+@media(max-width:750px){
+    #error{
+        .h3{
+            h3{
+                font-size: 2.9rem!important;
+            }
+            
+        }
+        h1{
+            font-size: 13rem!important;
+        }
+    }
+}
+#mainmenu{
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 750px)
+{
+    
+    #altmenu{
+        display: none;
+    }
+}
+@media (max-width: 750px)
+{
+    #error{
+        .first-row{
+            .barmenu{
+                display: block!important;
+            }
+            padding-top: 0!important;
+            justify-content: space-between!important;
+        }
+        .bar{
+            display: inline;
+        }
+    }
+        .settings{
+            display: none;
+        }
+    .travelo .menu-bar{
+        display: block!important;
+    }
+    #mainmenu{
+        display: none!important;
+    }
+    .top-nav{
+        display: none;
+    }
+
+}
+
+#menu{
+    
+               list-style: none;
+               
+               li{
+                position: relative;
+                   #alt-ul{
+                       #innerli{
+                            &:hover{
+                                color: white;
+                                background: #067492;
+                            }
+                            color: white;
+                           height: auto;
+                           padding: 10px 20px;
+                           border-bottom: 1px solid #0b80a0;
+                       }
+                       padding:0;
+                       transition:all 0.3s ease;
+                       opacity: 0;
+                       visibility: hidden;
+                       position: absolute;
+                       bottom: 130%;
+                       left: -12px;
+                       z-index: 999;
+                       background: $maincolor;
+                       margin-top: 20px;
+                       list-style: none;
+                   }
+                   height: 30px;
+                   &:hover{
+                       color: $maincolor;
+                       #alt-ul{
+                           opacity: 1;
+                           visibility: visible;
+                       }
+                   }
+                   
+                   padding-right: 30px;
+                   transition: all 0.5s ease;
+                   color: gray;
+                   font-weight: 700;
+                   font-size: 0.78rem;
+                    font-family: 'Lato', sans-serif;
+                   cursor: pointer;
+               }
+           }
+        
